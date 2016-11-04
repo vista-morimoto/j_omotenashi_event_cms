@@ -1,0 +1,1 @@
+# j_omotenashi_event_cms
