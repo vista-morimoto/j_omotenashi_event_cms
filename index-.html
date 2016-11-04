@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>${$school.school_name}</title>
+<meta name="description" content="${$school.school_name}">
+<meta name="keywords" content="${$school.school_name}">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script src="js/jquery-ui.multidatespicker.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<script src="js/accordion.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/slick-theme.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/custom.css" />
+<script>
+$(function(){
+  $('.js-matchHeigtht').matchHeight();
+});
+</script>
+<style type="text/css">
+@media screen and (min-width: 768px) {
+    div.ui-datepicker {
+        font-size: 2.1rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.ui-datepicker {
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+    .ui-datepicker th {
+        padding: 1rem .3em;
+    }
+}
+.ui-datepicker th {
+    padding: 0.5em 0.3em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    height: 30px;
+}
+</style>
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="img/favicon.ico" >
+</head>
+<body>
+<!--// ヘッダー //-->
+<!--{include file="html:.templates/.header.html"}-->
+<!--// ヘッダー //-->
+
+<!--// スライダー //-->
+<!--{include file="html:.templates/.slider.html"}-->
+<!--// スライダー //-->
+
+<section id="contant">
+
+    <nav id="searchlinkNav" class="pc_none">
+        <ul>
+            <li><a href="#event_area" onclick="javascript:urchinTracker('/event_area');"><i class="fa fa-arrow-down" aria-hidden="true"></i>分野から選ぶ</a></li>
+            <li><a href="#cal_area" onclick="javascript:urchinTracker('/cal_area');"><i class="fa fa-arrow-down" aria-hidden="true"></i>日程から選ぶ</a></li>
+        </ul>
+    </nav>
+
+	<!--<div class="attention">
+		<p><img src="img/star.png">アテンション１</p>
+		<p><img src="img/star.png">アテンション２</p>
+		<p><img src="img/star.png">アテンション３</p>
+		<p><img src="img/star.png">アテンション４</p>
+		<p><img src="img/star.png">アテンション５</p>
+	</div>-->
+	<div id="event_area">
+		<p class="tit">分野から選ぶ</p>
+		<div class="event_box">
+            <ul class="clearfix">
+                <li class="event"><a href="results.html?category[]=1059&type[]=3&type[]=2"><img alt="ブライダル" src="img/top/thum_bridal.png"></a></li>
+                <li class="event"><a href="results.html?category[]=1062&type[]=3&type[]=2"><img alt="ホテル" src="img/top/thum_hotel.png"></a></li>
+                <li class="event"><a href="results.html?category[]=1063&type[]=3&type[]=2"><img alt="旅行" src="img/top/thum_travel.png"></a></li>
+                <li class="event"><a href="results.html?category[]=1060&type[]=3&type[]=2"><img alt="エアライン" src="img/top/thum_airline.png"></a></li>
+                <li class="event"><a href="results.html?category[]=1065&type[]=3&type[]=2"><img alt="鉄道" src="img/top/thum_railroad.png"></a></li>
+                <li class="event"><a href="results.html?category[]=1064&type[]=3&type[]=2"><img alt="葬祭" src="img/top/thum_ceremony.png"></a></li>
+            </ul>
+        </div>
+	</div>
+
+    <!--// カレンダー //-->
+    <!--{include file="html:.templates/.cal.html"}-->
+    <!--// カレンダー //-->
+
+    <!--<p class="mt20 mb20 Fclear"><a href="e-camp.html"><img alt="マイスクールキャンプ" src="img/top/myschool.jpg"></a></p>-->
+    
+    <div id="catgory_area">
+		<div class="box">
+            <a href="results.html?type[]=3">
+			<p class="photo"><img src="img/top/taiken_sp.jpg" alt="スペシャル体験"></p>
+			<p class="txt">スペシャル体験</p>
+            </a>
+        </div>
+        
+		<div class="box">
+            <a href="bus.html?type[]=3">
+			<p class="photo"><img src="img/top/taiken_bus.jpg" alt="無料送迎バス"></p>
+			<p class="txt">無料送迎バス</p>
+            </a>
+        </div>
+        
+		<div class="box">
+            <a href="guidance.html">
+			<p class="photo"><img src="img/top/taiken_guidance.jpg" alt="出張進学説明会"></p>
+			<p class="txt">出張進学説明会</p>
+            </a>
+        </div>
+        
+		<div class="box">
+            <a href="results.html?type[]=1">
+			<p class="photo"><img src="img/top/taiken_ex.jpg" alt="学校説明会"></p>
+			<p class="txt">学校説明会</p>
+            </a>
+        </div>
+        
+		<div class="box">
+            <a href="e-aosetumei.html">
+			<p class="photo"><img src="img/top/ao.jpg" alt="AO入学制度説明会"></p>
+			<p class="txt">AO入学制度特別説明会</p>
+            </a>
+        </div>
+        
+		<div class="box">
+            <a href="results.html?type[]=12,13">
+			<p class="photo"><img src="img/top/taiken_myschool.jpg" alt="マイスクール"></p>
+			<p class="txt">Myスクールプログラム </p>
+            </a>
+        </div>
+
+	</div>
+    
+    
+    <div class="flow eventTop">
+        <div class="flow_inner">
+            <p class="flow_title">お仕事体験1日のスケジュール<br class="is-sp"><span class="is-sp">12:00 集合 / 16:00 終了予定</span></p>
+            <ol class="flowList is-pc">
+                <li class="flowList_item"><img src="img/top/flow01.png" alt="12:00 集合" class="flow_img"></li>
+                <li class="flowList_item"><img src="img/top/flow02.png" alt="12:30 学校説明･校舎見学" class="flow_img"></li>
+                <li class="flowList_item"><img src="img/top/flow03.png" alt="13:30 お仕事体験" class="flow_img"></li>
+                <li class="flowList_item"><img src="img/top/flow04.png" alt="15:00 個別相談" class="flow_img"></li>
+                <li class="flowList_item"><img src="img/top/flow05.png" alt="16:00 終了予定" class="flow_img"></li>
+            </ol>
+            <p class="accBtn is-sp"><a href="#">詳細はこちら</a></p>
+            <ol class="flowList is-sp">
+                <li class="flowList_item"><i class="fa fa-clock-o" aria-hidden="true"></i> <time>12:00</time>集合</li>
+                <li class="flowList_item"><i class="fa fa-clock-o" aria-hidden="true"></i> <time>12:30</time>学校説明・校舎見学</li>
+                <li class="flowList_item"><i class="fa fa-clock-o" aria-hidden="true"></i> <time>13:30</time>お仕事体験</li>
+                <li class="flowList_item"><i class="fa fa-clock-o" aria-hidden="true"></i> <time>15:00</time>個別相談</li>
+                <li class="flowList_item"><i class="fa fa-clock-o" aria-hidden="true"></i> <time>16:00</time>終了予定</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!--// フッター //-->
+<!--{include file="html:.templates/.footer.html"}-->
+<!--// フッター //-->
+<!--// トラッキング //-->
+<!--{include file="html:.templates/.tracking.html"}-->
+<!--// トラッキング //-->
+</body>
+</html>
