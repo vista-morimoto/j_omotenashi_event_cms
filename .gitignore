@@ -6,6 +6,7 @@ digital/
 # 下階層全てのフォルダ内で ".DS_Store"  "img/"ファイルを無視したい
 */.DS_Store
 */img/
+*/img/*/
 */images/
 */video/
  
