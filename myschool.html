@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>${$school.school_name}</title>
+<meta name="description" content="${$school.school_name}">
+<meta name="keywords" content="${$school.school_name}">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script src="js/jquery-ui.multidatespicker.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<script src="js/accordion.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/slick-theme.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/custom.css" />
+<script>
+$(function(){
+  $('.js-matchHeigtht').matchHeight();
+});
+</script>
+<style type="text/css">
+@media screen and (min-width: 768px) {
+    div.ui-datepicker {
+        font-size: 2.1rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.ui-datepicker {
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+    .ui-datepicker th {
+        padding: 1rem .3em;
+    }
+}
+.ui-datepicker th {
+    padding: 0.5em 0.3em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    height: 30px;
+}
+</style>
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="img/favicon.ico" >
+</head>
+<body>
+<!--// ヘッダー //-->
+<!--{include file="html:.templates/.header.html"}-->
+<!--// ヘッダー //-->
+
+<!--contant-->
+<section id="contant">
+
+<div class="baseBox">
+
+            <div class="guidance clearfix">
+                <p><strong class="pink">好きなことが同じ仲間をつくる！「心のおもてなし」で仕事の楽しさを体感しよう！</strong></p>
+                <p class="tit_img mb15"><img src="img/myschool/myschool_img.jpg" alt=""></p>
+                <p class="tit"><img src="img/myschool/myschool_tit.png" alt="Myスクールプログラム"></p>
+                <p class="mt20">目指す仕事を実現するために、少しでも早くスタート！ <br>
+                滋慶おもてなしならではの授業を先取りしよう！<br>
+                同じ夢を持ったお友達をたくさん作って、楽しく学ぼう♪</p>                
+            </div>
+            <!--<h2 class="borderTit"><br /><span class="fontLL">Myスクールプログラム</span></h2>-->
+            <ul class="infoIco mt15 clearfix">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>12：00受付 →
+              12：15開始 →
+              13：15終了
+            </ul>
+            <p class="Fclear red">Myスクールの後に体験授業にも参加できるよ！</p>
+            
+            <p class="mt20 mb20"><a href="e-camp.html"><img alt="マイスクールキャンプ" src="img/top/myschool.jpg"></a></p>
+            <p class="JoinBtn W50per mt20 mb20"><a href="results.html?type[]=12,13">Myスクールプログラム一覧はこちら</a></p>
+
+            <dl class="mb15 mt15">
+                <dt>Myスクールとは？</dt>
+                <dd>
+                Myスクールとは、同じ夢を持ったお友達をたくさん作って、楽しく授業を受けていただくことができる、参加無料のプログラムです。<br>
+自分の進みたい道を決めるためにも5ワールドの中から興味のある授業を選択し、ホスピタリティ業界で働くすばらしさを感じて自分の「好き」なお仕事をさがしましょう。
+                </dd>
+            </dl>
+
+            <dl class="Pinking mb15">
+                <dt>Myスクールの4つのメリット</dt>
+                <dd>目指す仕事を実現するために少しでも早くスタートし、入学前から専門的な技術や知識を身につけられるようサポートします。</dd>
+                <dd>1.<strong class="pink">Myスクールカード</strong>がもらえる</dd>
+                <dd>2.<strong class="pink">Myスクール特別授業</strong>が受けられる</dd>
+                <dd>3.<strong class="pink">特別見学ツアー</strong>を体験できる</dd>
+                <dd>4.<strong class="pink">Myスクールキャンプ</strong>に参加できる！！</dd>
+            </dl>
+
+
+        </div>
+
+
+
+
+</section>
+<!-- / contant-->
+
+<!--// フッター //-->
+<!--{include file="html:.templates/.footer.html"}-->
+<!--// フッター //-->
+<!--// トラッキング //-->
+<!--{include file="html:.templates/.tracking.html"}-->
+<!--// トラッキング //-->
+</body>
+</html>
